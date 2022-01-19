@@ -4,9 +4,8 @@ using System.Text;
 
 namespace TiendaArteTest
 {
-    class Registro : Usuario, IMetodos
+    class Pago
     {
-             
-       
+        public string id { get; set; }
     }
 }

@@ -4,14 +4,14 @@ using System.Text;
 
 namespace TiendaArteTest
 {
-    class Pedidos
+    class Pedidos : Articulo, IMetodos
     {
         public string numeropedido { get; set; }       
-        public string descripcion { get; set; }
+        public string descripcionpedido { get; set; }
         public string confirmacion { get; set; }
-        public virtual void Mostrar()
+        public override void Mostrar()
         {
-            Console.WriteLine("Número de pedido: " + numeropedido +"\nDescripción: " + descripcion + "\nConfirmacion de pedido: " + confirmacion);
+            Console.WriteLine("Número de pedido: " + numeropedido +"\nDescripción: " + descripcionpedido + "\nConfirmacion de pedido: " + confirmacion);
         }
     }
 }

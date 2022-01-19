@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TiendaArteTest
 {
@@ -10,9 +11,13 @@ namespace TiendaArteTest
             Login login1 = new Login();
             Articulo articulo1 = new Articulo();
             Articulo articulo2 = new Articulo();
+            TarjetaCredito tarj1 = new TarjetaCredito();
+            Carrito carrito = new Carrito();
+            Pedidos pedido = new Pedidos();
+            //
             //Declaración de variables por utilizar.
             double neg1;
-            int opcion, opcion1;
+            int opcion, opcion1, opcion2;
             opcion = 0;
             neg1=0;
             //Mediante un do while procesamos el ingreso a la aplicación.
@@ -31,7 +36,6 @@ namespace TiendaArteTest
                     //En el primer caso al ingresar el 1 se procede a crear la cuenta.
                     case 1:
                         Console.WriteLine("**** Creación de una nueva Cuenta ****");
-                        //Registro user1 = new Registro();
                         Console.WriteLine("\nIngresa tu Nombre y apellido:");
                         user1.nombre = Console.ReadLine();
                         Console.WriteLine("\nIngresa tu edad:");
@@ -42,7 +46,6 @@ namespace TiendaArteTest
                         user1.email = Console.ReadLine();
                         Console.WriteLine("\nIngresa tu contraseña:");
                         user1.contraseña = Console.ReadLine();
-                        
                         if (user1.edad >= 16)
                         {
                             Console.Clear();
@@ -56,7 +59,7 @@ namespace TiendaArteTest
                             Console.WriteLine("Tienes que ser mayor de 15 años para crear una cuenta");
                             Console.WriteLine("Presiona 1 para salir");
                             neg1 = int.Parse(Console.ReadLine());
-                        }                                              
+                        }                                             
                         break;
                     //En el segundo caso al ingresar el 2 se procede al login de la cuenta.
                     case 2:
@@ -78,7 +81,7 @@ namespace TiendaArteTest
             }
             else
             {
-                Console.WriteLine("**** INICIAR SESIÓN ****");                
+                Console.WriteLine("**** INICIAR SESIÓN ****");
                 Console.WriteLine("\n> Usuario");
                 login1.username = Console.ReadLine();
                 Console.WriteLine("\n> Contraseña");
@@ -86,12 +89,11 @@ namespace TiendaArteTest
                 do
                 {
                     Console.Clear();
-                    Console.WriteLine("Bienvenid@ " + user1.nombre + ". Tenemos todas las piezas de arte que deseas y seueñas.");
+                    Console.WriteLine("Bienvenid@ " +login1.username+ ". Tenemos todas las piezas de arte que deseas y seueñas.");
                     Console.WriteLine("  1. Catálogo de artículos");
-                    Console.WriteLine("  2. Carrito de compras");
-                    Console.WriteLine("  3. Tu perfil");
-                    Console.WriteLine("  4. Más opciones");
-                    Console.WriteLine("  5. Salir");
+                    Console.WriteLine("  2. Perfil");
+                    Console.WriteLine("  3. Opciones de gestión");
+                    Console.WriteLine("  4. Salir");                    
                     opcion = int.Parse(Console.ReadLine());
                     Console.Clear();
                     switch (opcion)
@@ -99,7 +101,7 @@ namespace TiendaArteTest
                         case 1:
                             Console.WriteLine("**** CATÁLOGO DE ARTICULOS ****");
                             do
-                            {
+                            {                                
                                 Console.WriteLine("\n**** Prodcuto 1 ****");
                                 articulo1.nombre = "Poster de The Batman 2022";
                                 articulo1.id = "P224";
@@ -116,29 +118,93 @@ namespace TiendaArteTest
                                 articulo2.precio = 49.99;
                                 articulo2.stock = 10;
                                 articulo2.Mostrar();
-                                Console.WriteLine("\nPara añadir el producto al carrito");
-                                Console.WriteLine("Presiona 1 para el primer producto o 2 para el segundo.");
+                                Console.WriteLine("\n\nPara comprar el artículo");
+                                Console.WriteLine("Presiona 1 para el primer producto");
+                                Console.WriteLine("Presiona 2 para el segundo producto.");
+                                Console.WriteLine("\n****Presiona 3 para regresar****");
                                 opcion1 = int.Parse(Console.ReadLine());
+                                Console.Clear();
                                 switch (opcion1)
                                 {
                                     case 1:
-
+                                        Console.WriteLine("\n**** CARRITO ****");
+                                        Console.WriteLine("\nProducto 1 ha sido añadido al carrito");
+                                        carrito.nombre = articulo1.nombre;
+                                        carrito.descripcion = articulo1.descripcion;
+                                        carrito.precio = articulo1.precio;                                        
+                                        carrito.Mostrar();
+                                        Console.WriteLine("\n**** PEDIDO ****");
+                                        Console.WriteLine("\nSu pedido ha sido realizado");
+                                        pedido.numeropedido = "5584";
+                                        pedido.descripcionpedido = "1 " +articulo1.nombre;
+                                        pedido.confirmacion = "EL PAGO HA SIDO CONFIRMADO, SU PEDIDO SE HA ENVIADO";
+                                        pedido.Mostrar();
+                                        Console.ReadKey();
                                         break;
-
                                     case 2:
-
+                                        Console.WriteLine("\n**** CARRITO ****");
+                                        Console.WriteLine("\nProducto 2 ha sido añadido al carrito");
+                                        carrito.nombre = articulo2.nombre;
+                                        carrito.descripcion = articulo2.descripcion;
+                                        carrito.precio = articulo2.precio;
+                                        carrito.Mostrar();
+                                        Console.WriteLine("\n**** PEDIDO ****");
+                                        Console.WriteLine("\nSu pedido ha sido realizado");
+                                        pedido.numeropedido = "5584";
+                                        pedido.descripcionpedido = "1 " + articulo2.nombre;
+                                        pedido.confirmacion = "EL PAGO HA SIDO CONFIRMADO, SU PEDIDO SE HA ENVIADO";
+                                        pedido.Mostrar();
+                                        Console.ReadKey();
                                         break;
-
+                                    case 3:
+                                        Console.Clear();
+                                        break;
                                 }
+                                Console.ReadKey();
+                            } while (opcion1 != 3);
+                            break;
+                        case 2:
+                            Console.WriteLine("\n**** PERFIL ****");
+                            login1.nombre = user1.nombre;
+                            login1.edad = user1.edad;
+                            login1.username = user1.username;
+                            login1.email = user1.email;
+                            login1.Mostrar();
+                            Console.WriteLine("\n****Presiona una tecla para regresar****");
+                            break;                        
+                        case 3:
+                            do
+                            {
+                                Console.WriteLine("\n**** OPCIONES DE GESTIÓN ****");
+                                Console.WriteLine("  1. Metodos de pago");
+                                Console.WriteLine("  2. Notificaciones");                                
+                                Console.WriteLine("  3. Regresar");
+                                opcion2 = int.Parse(Console.ReadLine());
+                                Console.Clear();
+                                switch (opcion2)
+                                {
+                                    case 1:
+                                        break;
+                                    case 2:
+                                        break;
+                                    case 3:
+                                        break;
+                                }
+                            } while (opcion2 != 3);
 
-                            } while (true);
 
 
+                            //Console.Clear();
+                            // tarj1.agregartarjeta();
+                            break;
+                        case 4:
 
+                            break;
 
                     }
+                    Console.ReadKey();
 
-                } while (true);
+                } while (opcion != 4);
 
 
 

@@ -13,6 +13,7 @@ namespace TiendaArteTest
         public double stock { get; set; }
         public double precio { get; set; }
 
+       
         public virtual void Mostrar()
         {
             Console.WriteLine("\nArtículo: " + nombre +" id: #"+id+"\nCategoría: "+categoria+"\nDescripción: " + descripcion+ "\nDisponibilidad: " +stock + "\nPrecio: $" +precio);
