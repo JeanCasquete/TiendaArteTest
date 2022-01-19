@@ -12,7 +12,7 @@ namespace TiendaArteTest
             Articulo articulo2 = new Articulo();
             //Declaración de variables por utilizar.
             double neg1;
-            int opcion;
+            int opcion, opcion1;
             opcion = 0;
             neg1=0;
             //Mediante un do while procesamos el ingreso a la aplicación.
@@ -94,28 +94,49 @@ namespace TiendaArteTest
                     Console.WriteLine("  5. Salir");
                     opcion = int.Parse(Console.ReadLine());
                     Console.Clear();
-                    /*
                     switch (opcion)
                     {
                         case 1:
-                           
                             Console.WriteLine("**** CATÁLOGO DE ARTICULOS ****");
+                            do
+                            {
+                                Console.WriteLine("\n**** Prodcuto 1 ****");
+                                articulo1.nombre = "Poster de The Batman 2022";
+                                articulo1.id = "P224";
+                                articulo1.categoria = "Poster";
+                                articulo1.descripcion = "Poster de la pelicula The Batman de 2022, pintado a mano en oleo.";
+                                articulo1.precio = 24.99;
+                                articulo1.stock = 34;
+                                articulo1.Mostrar();
+                                Console.WriteLine("\n**** Prodcuto 2 ****");
+                                articulo2.nombre = "Cuadro paisaje urbano de Barcelona por la noche.";
+                                articulo2.id = "Q312";
+                                articulo2.categoria = "Cuadro";
+                                articulo2.descripcion = "Cuadro en lienzo que refleja la magnficiencia de la ciudad de Barcelona en el anochecer";
+                                articulo2.precio = 49.99;
+                                articulo2.stock = 10;
+                                articulo2.Mostrar();
+                                Console.WriteLine("\nPara añadir el producto al carrito");
+                                Console.WriteLine("Presiona 1 para el primer producto o 2 para el segundo.");
+                                opcion1 = int.Parse(Console.ReadLine());
+                                switch (opcion1)
+                                {
+                                    case 1:
 
-                            articulo1.nombre = "Poster de The Batman 2022";
-                            articulo1.id = "P224";
-                            articulo1.categoria = "Poster";
-                            articulo1.descripcion = "Poster de la pelicula The Batman de 2022, pintado a mano en oleo.";
-                            articulo1.precio = 24.99;
-                            articulo1.stock = 34;
+                                        break;
 
-                            articulo2.nombre = "Cuadro paisaje urbano de Barcelona por la noche.";
-                            articulo2.id = "Q312";
-                            articulo2.categoria = "Cuadro";
-                            articulo2.descripcion = "Cuadro en lienzo que refleja la magnficiencia de la ciudad de Barcelona en el anochecer";
-                            articulo2.precio = 49.99;
-                            articulo2.stock = 10;
+                                    case 2:
 
-                    }*/
+                                        break;
+
+                                }
+
+                            } while (true);
+
+
+
+
+                    }
 
                 } while (true);
 

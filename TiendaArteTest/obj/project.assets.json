@@ -8,24 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\YinRo\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\RobertoAlejandro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\YinRo\\Desktop\\TiendaArteTest\\TiendaArteTest\\TiendaArteTest.csproj",
+      "projectUniqueName": "C:\\Users\\RobertoAlejandro\\Documents\\Cosass\\TiendaTest\\TiendaArteTest\\TiendaArteTest.csproj",
       "projectName": "TiendaArteTest",
-      "projectPath": "C:\\Users\\YinRo\\Desktop\\TiendaArteTest\\TiendaArteTest\\TiendaArteTest.csproj",
-      "packagesPath": "C:\\Users\\YinRo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\YinRo\\Desktop\\TiendaArteTest\\TiendaArteTest\\obj\\",
+      "projectPath": "C:\\Users\\RobertoAlejandro\\Documents\\Cosass\\TiendaTest\\TiendaArteTest\\TiendaArteTest.csproj",
+      "packagesPath": "C:\\Users\\RobertoAlejandro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RobertoAlejandro\\Documents\\Cosass\\TiendaTest\\TiendaArteTest\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\YinRo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\RobertoAlejandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

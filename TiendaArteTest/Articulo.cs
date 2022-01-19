@@ -15,7 +15,7 @@ namespace TiendaArteTest
 
         public virtual void Mostrar()
         {
-            Console.WriteLine("Artículo: " + nombre +" id: #"+id+"\nCategoría: "+categoria+"\nDescripción: " + descripcion+ "\nDisponibilidad: " +stock + "\nPrecio: $" +precio);
+            Console.WriteLine("\nArtículo: " + nombre +" id: #"+id+"\nCategoría: "+categoria+"\nDescripción: " + descripcion+ "\nDisponibilidad: " +stock + "\nPrecio: $" +precio);
         }
     }
 }
