@@ -4,8 +4,13 @@ using System.Text;
 
 namespace TiendaArteTest
 {
-    class Pago
+    class Pago : IMetodos
     {
         public string id { get; set; }
+
+        public virtual void Mostrar()
+        {
+
+        }
     }
 }

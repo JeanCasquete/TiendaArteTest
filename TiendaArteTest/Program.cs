@@ -17,7 +17,7 @@ namespace TiendaArteTest
             //
             //Declaración de variables por utilizar.
             double neg1;
-            int opcion, opcion1, opcion2;
+            int opcion, opcion1, opcion2, opcion3;
             opcion = 0;
             neg1=0;
             //Mediante un do while procesamos el ingreso a la aplicación.
@@ -99,9 +99,10 @@ namespace TiendaArteTest
                     switch (opcion)
                     {
                         case 1:
-                            Console.WriteLine("**** CATÁLOGO DE ARTICULOS ****");
+                          
                             do
-                            {                                
+                            {
+                                Console.WriteLine("**** CATÁLOGO DE ARTICULOS ****");
                                 Console.WriteLine("\n**** Prodcuto 1 ****");
                                 articulo1.nombre = "Poster de The Batman 2022";
                                 articulo1.id = "P224";
@@ -175,6 +176,7 @@ namespace TiendaArteTest
                         case 3:
                             do
                             {
+                                Console.Clear();
                                 Console.WriteLine("\n**** OPCIONES DE GESTIÓN ****");
                                 Console.WriteLine("  1. Metodos de pago");
                                 Console.WriteLine("  2. Notificaciones");                                
@@ -183,24 +185,44 @@ namespace TiendaArteTest
                                 Console.Clear();
                                 switch (opcion2)
                                 {
-                                    case 1:
+                                    case 1:                                        
+                                        do
+                                        {                                           
+                                            Console.WriteLine("\n**** GESTIONAR METODOS DE PAGO ****");
+                                            Console.WriteLine("\n  1. Añadir Tarjeta de credito");
+                                            Console.WriteLine("  2. Ver mis tarjetas");                                            
+                                            Console.WriteLine("  3. Regresar");
+                                            opcion3 = int.Parse(Console.ReadLine());
+                                            Console.Clear();
+                                            switch (opcion3)
+                                            {
+                                                case 1:                                                   
+                                                    tarj1.agregartarjeta();                                                    
+                                                    break;
+
+                                                case 2:                                                                                                        
+                                                    tarj1.Mostrar();                                                    
+                                                    
+                                                    break;
+                                                case 3:
+                                                    Console.Clear();
+                                                    break;
+                                            }
+
+                                        } while (opcion3 != 3);
+
                                         break;
                                     case 2:
                                         break;
                                     case 3:
+                                        Console.Clear();
                                         break;
                                 }
-                            } while (opcion2 != 3);
-
-
-
-                            //Console.Clear();
-                            // tarj1.agregartarjeta();
+                            } while (opcion2 != 3);                                                     
                             break;
                         case 4:
-
+                            Console.Clear();
                             break;
-
                     }
                     Console.ReadKey();
 

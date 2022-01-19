@@ -12,7 +12,7 @@ namespace TiendaArteTest
 
         public void agregartarjeta()
         {
-            Console.WriteLine("**** AGREGA UNA TARJETA DE CREDITO/DEBITO ****");
+            Console.WriteLine("\n**** AGREGA UNA TARJETA DE CREDITO/DEBITO ****");
             Carrito tarj1 = new Carrito();
             Console.WriteLine("\nIngresa tu Numero de tarjeta:");
             numtarjeta = Console.ReadLine();
@@ -26,11 +26,13 @@ namespace TiendaArteTest
             }
             Console.WriteLine("\nIngresa la fecha de vencimiento de la tarjeta:");
             fechatarjeta = Console.ReadLine();
+            Console.Clear();
         }
 
-        public virtual void Mostrar()
+        public override void Mostrar()
         {
-
+            Console.WriteLine("**** ESTAS SON TUS TAREJTAS ****");
+            Console.WriteLine("\nNúmero de tarjeta: " + numtarjeta+ "\nFecha de vencimiento: " + fechatarjeta+ "\nCvv: " + cvv);            
         }
     }
 }
