@@ -1,0 +1,14 @@
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\bin\Debug\netcoreapp3.1\TiendaArteTest.exe
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\bin\Debug\netcoreapp3.1\TiendaArteTest.deps.json
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\bin\Debug\netcoreapp3.1\TiendaArteTest.runtimeconfig.json
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\bin\Debug\netcoreapp3.1\TiendaArteTest.runtimeconfig.dev.json
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\bin\Debug\netcoreapp3.1\TiendaArteTest.dll
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\bin\Debug\netcoreapp3.1\TiendaArteTest.pdb
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\obj\Debug\netcoreapp3.1\TiendaArteTest.csproj.AssemblyReference.cache
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\obj\Debug\netcoreapp3.1\TiendaArteTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\obj\Debug\netcoreapp3.1\TiendaArteTest.AssemblyInfoInputs.cache
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\obj\Debug\netcoreapp3.1\TiendaArteTest.AssemblyInfo.cs
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\obj\Debug\netcoreapp3.1\TiendaArteTest.csproj.CoreCompileInputs.cache
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\obj\Debug\netcoreapp3.1\TiendaArteTest.dll
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\obj\Debug\netcoreapp3.1\TiendaArteTest.pdb
+C:\Users\RobertoAlejandro\source\repos\TiendaArteTest\TiendaArteTest\obj\Debug\netcoreapp3.1\TiendaArteTest.genruntimeconfig.cache
