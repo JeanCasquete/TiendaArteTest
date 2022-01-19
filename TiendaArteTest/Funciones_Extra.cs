@@ -8,13 +8,12 @@ namespace TiendaArteTest
     {
         public int masopciones;
         public string direcci { get; set; }
-        public virtual void notificaciones()
+        public void notificaciones()
         {
-
-            Console.Clear();
+            //Console.Clear();
             Console.WriteLine(" Aquí encontraras tus notifaciones ");
             Console.WriteLine("  Estas son tus notificaciones: ");
-            Console.WriteLine("    **no tiene notificaciones, nadie lo quiere");
+            Console.WriteLine("    **TU PEDIDO HA SIDO ENVIADO");
         }
         public virtual void direcciones()
         {
@@ -22,8 +21,7 @@ namespace TiendaArteTest
                 Console.WriteLine("DIRECCIONES");
                 Console.WriteLine(" Agrega tu direccion");           
                 direcci= Console.ReadLine();
-                Console.WriteLine(" La direccion " +direcci +"fue agregada correctamente");
-                  
+                Console.WriteLine(" La direccion " +direcci +"fue agregada correctamente");                  
         }
            
          

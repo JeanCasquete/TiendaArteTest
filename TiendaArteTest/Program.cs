@@ -13,8 +13,8 @@ namespace TiendaArteTest
             Articulo articulo2 = new Articulo();
             TarjetaCredito tarj1 = new TarjetaCredito();
             Carrito carrito = new Carrito();
-            Pedidos pedido = new Pedidos();
-            //
+            Pedidos pedido = new Pedidos();           
+            
             //Declaración de variables por utilizar.
             double neg1;
             int opcion, opcion1, opcion2, opcion3;
@@ -175,8 +175,7 @@ namespace TiendaArteTest
                             break;                        
                         case 3:
                             do
-                            {
-                                Console.Clear();
+                            {                                
                                 Console.WriteLine("\n**** OPCIONES DE GESTIÓN ****");
                                 Console.WriteLine("  1. Metodos de pago");
                                 Console.WriteLine("  2. Notificaciones");                                
@@ -213,6 +212,10 @@ namespace TiendaArteTest
 
                                         break;
                                     case 2:
+                                        Console.Clear();
+                                        Console.WriteLine(" Aquí encontraras tus notifaciones ");
+                                        Console.WriteLine("  Estas son tus notificaciones: ");
+                                        Console.WriteLine("    **TU PEDIDO HA SIDO ENVIADO **");
                                         break;
                                     case 3:
                                         Console.Clear();
@@ -225,21 +228,7 @@ namespace TiendaArteTest
                             break;
                     }
                     Console.ReadKey();
-
                 } while (opcion != 4);
-
-
-
-
-
-
-
-
-
-
-
-
-
             }      
         }
     }
